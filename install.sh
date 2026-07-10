@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# git clone --depth 1 https://github.com/hexdumb/turing-smart-screen-python-bc250.git
 
 MODULE_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
 
@@ -23,8 +24,10 @@ EOF
     ls -l /dev/ttyACM0
 fi
 
-
+# Update repo and create venv
 cd "$MODULE_DIR"
+
+git pull
 
 python3 -m venv venv
 source venv/bin/activate
@@ -42,8 +45,8 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-WorkingDirectory=$MODULE_DIR
-ExecStart=$MODULE_DIR/venv/bin/python3 $MODULE_DIR/main.py
+WorkingDirectory="$MODULE_DIR"
+ExecStart="$MODULE_DIR/venv/bin/python3" "$MODULE_DIR/main.py"
 Restart=always
 RestartSec=5
 
@@ -53,5 +56,5 @@ WantedBy=default.target" > ~/.config/systemd/user/turing.service
 systemctl --user daemon-reload
 systemctl --user enable turing.service
 systemctl --user start turing.service
-
+sleep 3
 systemctl --user status turing.service
