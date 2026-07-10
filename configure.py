@@ -151,8 +151,12 @@ model_and_size_to_revision_map = {
     (SIMULATED_MODEL, SIZE_8_INCH): 'SIMU',
     (SIMULATED_MODEL, SIZE_8_8_INCH): 'SIMU',
 }
-hw_lib_map = {"AUTO": "Automatic", "LHM": "LibreHardwareMonitor (admin.)", "PYTHON": "Python libraries",
-              "STUB": "Fake random data", "STATIC": "Fake static data"}
+hw_lib_map = {"AUTO": "Automatic",
+              "LHM": "LibreHardwareMonitor (admin.)",
+              "PYTHON": "Python libraries",
+              "BC-250": "Asrock BC-250",
+              "STUB": "Fake random data",
+              "STATIC": "Fake static data"}
 reverse_map = {False: "classic", True: "reverse"}
 weather_unit_map = {"metric": "metric - °C", "imperial": "imperial - °F", "standard": "standard - °K"}
 weather_lang_map = {"sq": "Albanian", "af": "Afrikaans", "ar": "Arabic", "az": "Azerbaijani", "eu": "Basque",

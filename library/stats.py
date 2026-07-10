@@ -53,6 +53,11 @@ if HW_SENSORS == "PYTHON":
         logger.warning("It is recommended to use LibreHardwareMonitor integration for Windows instead of Python "
                        "libraries (require admin. rights)")
     import library.sensors.sensors_python as sensors
+elif HW_SENSORS == "BC-250":
+    if platform.system() == 'Windows':
+        logger.warning("It is recommended to use LibreHardwareMonitor integration for Windows instead of Python "
+                       "libraries (require admin. rights)")
+    import library.sensors.sensors_bc250 as sensors
 elif HW_SENSORS == "LHM":
     if platform.system() == 'Windows':
         import library.sensors.sensors_librehardwaremonitor as sensors

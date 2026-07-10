@@ -1,0 +1,222 @@
+---
+author: "@Ebag333"
+
+display:
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 255, 0, 0
+
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 320
+    HEIGHT: 480
+static_text:
+  TEXT_EXAMPLE:
+    TEXT: "STEAM Machine"
+    X: 0
+    Y: 407
+    WIDTH: 320
+    ALIGN: center
+    ANCHOR: mm
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_SIZE: 30
+    FONT_COLOR: 200, 200, 200
+    BACKGROUND_IMAGE: background.png
+  TEXT_EXAMPLE1:
+    TEXT: "AssRock BC-250"
+    X: 0
+    Y: 448
+    WIDTH: 320
+    ALIGN: center
+    ANCHOR: mm
+    FONT: geforce/GeForce-Bold.ttf
+    FONT_SIZE: 20
+    FONT_COLOR: 200, 200, 200
+    BACKGROUND_IMAGE: background.png
+STATS:
+  CPU:
+    PERCENTAGE:
+      INTERVAL: 1
+      GRAPH:
+        SHOW: True
+        X: 113
+        Y: 71
+        WIDTH: 178
+        HEIGHT: 13
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 160, 160, 160
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 50, 55, 57
+    FREQUENCY:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 100
+        Y: 91
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_SIZE: 13
+        FONT_COLOR: 200, 200, 200
+        BACKGROUND_IMAGE: background.png
+    LOAD:
+      INTERVAL: 5
+      ONE:
+        TEXT:
+          SHOW: True
+          SHOW_UNIT: True
+          X: 110
+          Y: 110
+          FONT: roboto/Roboto-Bold.ttf
+          FONT_SIZE: 13
+          FONT_COLOR: 200, 200, 200
+          BACKGROUND_IMAGE: background.png
+      FIVE:
+        TEXT:
+          SHOW: TRUE
+          SHOW_UNIT: True
+          X: 183
+          Y: 110
+          FONT: roboto/Roboto-Bold.ttf
+          FONT_SIZE: 13
+          FONT_COLOR: 200, 200, 200
+          BACKGROUND_IMAGE: background.png
+      FIFTEEN:
+        TEXT:
+          SHOW: TRUE
+          SHOW_UNIT: True
+          X: 265
+          Y: 110
+          FONT: roboto/Roboto-Bold.ttf
+          FONT_SIZE: 13
+          FONT_COLOR: 200, 200, 200
+          BACKGROUND_IMAGE: background.png
+
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 115
+        Y: 145
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_SIZE: 13
+        FONT_COLOR: 200, 200, 200
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left
+        ANCHOR: lt
+
+  GPU:
+    INTERVAL: 1
+    PERCENTAGE:
+      GRAPH:
+        SHOW: True
+        X: 113
+        Y: 197
+        WIDTH: 178
+        HEIGHT: 13
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 160, 160, 160
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 50, 55, 57
+    MEMORY:
+      GRAPH:
+        SHOW: True
+        X: 113
+        Y: 215
+        WIDTH: 178
+        HEIGHT: 13
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 160, 160, 160
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 50, 55, 57
+    FREQUENCY:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 100
+        Y: 235
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_SIZE: 13
+        FONT_COLOR: 200, 200, 200
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      TEXT:
+        SHOW: TRUE
+        SHOW_UNIT: True
+        X: 115
+        Y: 253
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_SIZE: 13
+        FONT_COLOR: 200, 200, 200
+        BACKGROUND_IMAGE: background.png
+  MEMORY:
+    INTERVAL: 5
+    SWAP:
+      GRAPH:
+        SHOW: True
+        X: 113
+        Y: 303
+        WIDTH: 178
+        HEIGHT: 13
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 160, 160, 160
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 50, 55, 57
+    VIRTUAL:
+      GRAPH:
+        SHOW: True
+        X: 113
+        Y: 321
+        WIDTH: 178
+        HEIGHT: 13
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 160, 160, 160
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 50, 55, 57
+  DISK:
+    INTERVAL: 10
+    USED:
+      GRAPH:
+        SHOW: True
+        X: 113
+        Y: 375
+        WIDTH: 178
+        HEIGHT: 13
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 160, 160, 160
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 50, 55, 57
+  DATE:
+    INTERVAL: 1
+    DAY:
+      TEXT:
+        SHOW: True
+        X: 10
+        Y: 20
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_SIZE: 13
+        FONT_COLOR: 200, 200, 200
+        BACKGROUND_IMAGE: background.png
+        WIDTH: 130
+        ANCHOR: lt
+    HOUR:
+      TEXT:
+        SHOW: True
+        FORMAT: "HH:mm:ss"
+        X: 205
+        Y: 17
+        FONT: roboto/Roboto-Bold.ttf
+        FONT_SIZE: 18
+        FONT_COLOR: 200, 200, 200
+        BACKGROUND_IMAGE: background.png
+        WIDTH: 100
+        ANCHOR: lt

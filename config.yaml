@@ -10,7 +10,7 @@ config:
   # Theme to use (located in res/themes)
   # Use the name of the folder as value
   # Choose a theme made for your screen size (see DISPLAY_SIZE inside theme.yaml)
-  THEME: 3.5inchTheme2
+  THEME: Terminal_bc250
 
   # Hardware sensors reading
   # Choose the appropriate method for reading your hardware sensors:
@@ -18,7 +18,8 @@ config:
   # - LHM            use LibreHardwareMonitor library to read hardware sensors (Windows only - NEEDS ADMIN RIGHTS)
   # - STUB / STATIC  use random/static data instead of real hardware sensors
   # - AUTO           use the best method based on your OS: Windows OS will use LHM, other OS will use Python libraries
-  HW_SENSORS: AUTO
+  # - BC-250         use Python libraries (psutils, GPUtil...) to read hardware sensors on AsRock BC-250
+  HW_SENSORS: BC-250
 
   # Network interfaces
   # Linux/MacOS interfaces are named "eth0", "wlan0", "wlp1s0", "enp2s0"...

@@ -1,0 +1,3 @@
+
+FAN_MAX_RPM = 3000
+DISK_MOUNT_POINT = '/var'
